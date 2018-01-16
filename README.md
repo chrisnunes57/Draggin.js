@@ -9,3 +9,6 @@ This project was created with simplicity and abstraction in mind. Draggin.js is 
 - No need to write Javascript code
 - Once included, is **instantly** usable
 - Editable text!
+- ***ZERO DEPENDENCIES***
+     - Written in vanilla Javascript
+     - No extraneous CSS or JS needed
