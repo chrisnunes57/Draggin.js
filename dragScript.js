@@ -1,6 +1,6 @@
 document.body.onload = function(){
     //Apply some basic styles 
-    var css = ".draggable{cursor: move;display: inline-block;} .text:focus{cursor: auto;} .text-wrapper{width: 100%;position: relative;} .wrap{position: absolute;margin: auto;top: 0;bottom: 0;left: 0;right: 0;}';";
+    var css = ".draggable{cursor: move;display: inline-block;} .text{display: inline-block; cursor: move;} .text:focus{cursor: auto;} .text-wrapper{width: 100%;position: relative;} .wrap{position: absolute;margin: auto;top: 0;bottom: 0;left: 0;right: 0;}';";
     var style = document.createElement('style');
     if (style.styleSheet) {
         style.styleSheet.cssText = css;
@@ -8,7 +8,6 @@ document.body.onload = function(){
         style.appendChild(document.createTextNode(css));
     }
     document.getElementsByTagName('head')[0].appendChild(style);
-    console.log("done");
 
     // Select all elements with the 'draggable' class and stores them in the 'elements' variable
     var elements = document.querySelectorAll(".draggable");
