@@ -18,7 +18,7 @@ To use the script, simply include it in your webpage in a ```<script>``` tag:
 ```
 <script type="text/javascript" src="https://chrisnunes.net/draggin.js"></script>
 ```
-**OR (not recommended**
+**OR**
 Download the draggin.min.js file above and include it in your webpage:
 ```
 <script type="text/javascript" src="draggin.min.js"></script>
