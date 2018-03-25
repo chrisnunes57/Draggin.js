@@ -20,7 +20,7 @@ To use the script, simply include it in your webpage in a ```<script>``` tag:
 ```
 ### OR
 
-Download the draggin.min.js file above and include it in your webpage:
+Download the draggin.min.js file from this repository and include it in your webpage:
 ```
 <script type="text/javascript" src="draggin.min.js"></script>
 ```
