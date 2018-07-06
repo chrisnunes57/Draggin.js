@@ -24,8 +24,6 @@ Download the draggin.min.js file from this repository and include it in your web
 ```
 <script type="text/javascript" src="draggin.min.js"></script>
 ```
-#### NOTE
-Don't include this script in the ```<head>``` of your page. Draggin.js must run after your whole page has rendered for it to work, so include it at the very end of your ```<body>``` tag. This is better practice than including scripts in the ```<head>```.
 ## Usage
 Draggin.js is designed with simplicity in mind. Once you have included the script in your page, all you have to do is render an element and give it a class of "draggable."
 ```
