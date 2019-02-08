@@ -44,3 +44,4 @@ Simply click once to drag elements, and double click to edit text.
 ## Future Developments
 - React.js Port 
 - Resizable Elements
+- Elements change position when screen resizes
