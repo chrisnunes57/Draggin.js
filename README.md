@@ -46,7 +46,7 @@ Simply click once to drag elements, and double click to edit text.
 - Resizable Elements
 - Elements change position when screen resizes
 
-Special thanks to *BrowserStack* for testing tools
+Special thanks to **BrowserStack** for testing tools
 
 ![BrowserStack](https://i1.wp.com/www.diogonunes.com/blog/wp-content/uploads/2016/07/browserstack-logo.png?resize=210%2C69 "Special thanks to *BrowserStack* for testing tools")
 
