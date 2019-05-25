@@ -1,5 +1,5 @@
 document.body.onload = function(){
-    //Apply some basic styles 
+    //Apply some basic styles
     var css = ".draggable{cursor: move;display: inline-block;} .text{display: inline-block; cursor: move;} .text:focus{cursor: auto;} .text-wrapper{width: 100%;position: relative;} .wrap{position: absolute;margin: auto;top: 0;bottom: 0;left: 0;right: 0;}';";
     var style = document.createElement('style');
     if (style.styleSheet) {
@@ -51,8 +51,8 @@ document.body.onload = function(){
         elements[i].addEventListener('touchstart', handleTouch);
         b = elements[i].getBoundingClientRect();
         // Calculate the initial offset of the element from the top left of the page and stores it as a property of the element
-        elements[i].initialOffsetX = b.left + window.scrollX;
-        elements[i].initialOffsetY = b.top + window.scrollY;
+        elements[i].initialOffsetX = b.left + window.pageXOffset;
+        elements[i].initialOffsetY = b.top + window.pageYOffset;
         elements[i].x = b.left;
         elements[i].y = b.top;
         elements[i].style.cursor = "move";
@@ -114,14 +114,14 @@ document.body.onload = function(){
           // Prevent default behavior and increase z index to bring the new element to the front
           event.preventDefault();
           moving = true;
-          z = z+1; 
+          z = z+1;
 
           // Identify which element was clicked and store in the 'tgt' element, then get position properties of it
           tgt = event.target;
           tgt.attributeName = 'test';
           b = tgt.getBoundingClientRect();
-          var x = b.left + window.scrollX;
-          var y = b.top + window.scrollY;
+          var x = b.left + window.pageXOffset;
+          var y = b.top + window.pageYOffset;
           offsetX = event.pageX || event.changedTouches[0].pageX;
           offsetY = event.pageY || event.changedTouches[0].pageY;
 
@@ -134,7 +134,7 @@ document.body.onload = function(){
               // Apply the styles to the element
               var position = 'transform: translate('+dx+'px, '+dy+'px);z-index:'+z+';';
               tgt.setAttribute('style', position);
-            };  
+            };
           });
           document.addEventListener('touchmove',function(e) {
               var touches = e.changedTouches;
@@ -148,7 +148,7 @@ document.body.onload = function(){
                   var position = 'transform: translate('+dx+'px, '+dy+'px);z-index:'+z+';';
                   tgt.setAttribute('style', position);
               }
-            };  
+            };
           });
       }
     };
